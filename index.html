@@ -17,6 +17,10 @@
 </head>
 <body>
     <h1 class="text-center">Regular and irregular verbs</h1>
+    <audio id="verb_audio">
+        <source id="audio" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <div class="row">
         <div class="col-lg-12">
             <div class="panel panel-primary">
@@ -26,9 +30,15 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="form-group col-sm-4">
-                                <label class="col-md-4 control-label">Verb base form: </label>
-                                <div class="col-md-8">
+                            <div id="base_form_div" class="form-group col-sm-4">
+                                <div class="col-sm-6">
+                                    <button id="base_form_audio" type="button" class="col-sm-4 btn btn-default" aria-label="Left Align" onclick="playAudio(this.id)">
+                                        <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                                    </button>
+                                    <label class="col-md-8 control-label">Verb base form: </label>
+                                </div>
+                                
+                                <div class="col-md-6">
                                     <select id="verb_list" class="form-control">
                                         <option value="">--Select the verb--</option>
                                     </select>
@@ -36,8 +46,14 @@
                             </div>
 
                             <div id="simple_past_div" class="form-group col-sm-4">
-                                <label class="col-sm-4" for="simple_past">Simple past: </label>
-                                <div class="col-sm-8">
+                                <div class="col-sm-6">
+                                    <button id="simple_past_audio" type="button" class="col-sm-4 btn btn-default" aria-label="Left Align" onclick="playAudio(this.id)">
+                                        <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                                    </button>
+                                    <label class="col-sm-8" for="simple_past">Simple past: </label>
+                                </div>
+                                
+                                <div class="col-sm-6">
                                     <input type="text" id="simple_past" class="form-control " />
                                     <span id="simple_past_icon_success" class="col-sm-1 glyphicon glyphicon-ok form-control-feedback"></span>
                                     <span id="simple_past_icon_error" class="col-sm-1 glyphicon glyphicon-remove form-control-feedback"></span>
@@ -45,8 +61,14 @@
                             </div>
 
                             <div id="past_participle_div" class="form-group col-sm-4">
-                                <label class="col-md-4">Past participle: </label>
-                                <div class="col-md-8">
+                                <div class="col-sm-6">
+                                    <button type="button" class="col-sm-4 btn btn-default" aria-label="Left Align" onclick="playAudio(this.id)">
+                                        <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                                    </button>
+                                    <label class="col-md-8">Past participle: </label>
+                                </div>
+                                
+                                <div class="col-md-6">
                                     <input type="text" id="past_participle" class="form-control" />
                                     <span id="past_participle_icon_success" class="col-sm-1 glyphicon glyphicon-ok form-control-feedback"></span>
                                     <span id="past_participle_icon_error" class="col-sm-1 glyphicon glyphicon-remove form-control-feedback"></span>
@@ -59,14 +81,14 @@
                             <button type="button" class="btn btn-primary" onclick="search()">Try it</button>
                         </div>
                     </div>
-                    <br />
+                    
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="col-sm-4">
                             </div>
                             <div class="col-sm-4 text-center">
                                 <div>
-                                    <img id="image-verb" src="images/verbs/white.jpg" width="130" height="110" alt="image_verb">
+                                    <img id="image-verb" src="images/verbs/white.jpg" width="190" height="130" alt="image_verb">
                                 </div>
                                 <div>
                                     <label id="spanish" class="control-label"></label>
