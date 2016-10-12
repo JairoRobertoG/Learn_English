@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn English Application</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn english easy">
+    <meta name="author" content="Jairo G�mez">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <h1 class="text-center">Regular and irregular verbs</h1>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Verbs</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group col-sm-4">
+                                <label class="col-md-4 control-label">Verb base form: </label>
+                                <div class="col-md-8">
+                                    <select id="verb_list" class="form-control">
+                                        <option value="">--Select the verb--</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div id="simple_past_div" class="form-group col-sm-4">
+                                <label class="col-sm-4" for="simple_past">Simple past: </label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="simple_past" class="form-control " />
+                                    <span id="simple_past_icon_success" class="col-sm-1 glyphicon glyphicon-ok form-control-feedback"></span>
+                                    <span id="simple_past_icon_error" class="col-sm-1 glyphicon glyphicon-remove form-control-feedback"></span>
+                                </div>
+                            </div>
+
+                            <div id="past_participle_div" class="form-group col-sm-4">
+                                <label class="col-md-4">Past participle: </label>
+                                <div class="col-md-8">
+                                    <input type="text" id="past_participle" class="form-control" />
+                                    <span id="past_participle_icon_success" class="col-sm-1 glyphicon glyphicon-ok form-control-feedback"></span>
+                                    <span id="past_participle_icon_error" class="col-sm-1 glyphicon glyphicon-remove form-control-feedback"></span>
+                                </div>
+                            </div>
+                       </div>    
+                    </div>    
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <button type="button" class="btn btn-primary" onclick="search()">Try it</button>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="col-sm-4">
+                            </div>
+                            <div class="col-sm-4 text-center">
+                                <div>
+                                    <img id="image-verb" src="images/white.jpg" width="130" height="110" alt="image_verb">
+                                </div>
+                                <div>
+                                    <label id="spanish" class="control-label"></label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/list-verbs.js"></script>
+</body>
+</html>
