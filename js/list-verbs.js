@@ -68,9 +68,9 @@ window.onload = function () {
         var verb_name = this.value;
 
         if(verb_name != "")
-            document.getElementById('image-verb').src = 'images/' + verb_name.toLowerCase() + '.png';
+            document.getElementById('image-verb').src = 'images/verbs/' + verb_name.toLowerCase() + '.png';
         else
-            document.getElementById('image-verb').src = 'images/white.jpg';
+            document.getElementById('image-verb').src = 'images/verbs/white.jpg';
 
         var spanish_verb = verbs.find(x => x.base_form == verb_name).spanish;
         console.log(spanish_verb);
@@ -86,7 +86,7 @@ function search() {
     clear();
 
     if (simple_past_verb != "") {
-        if (verb.simple_past.toLowerCase() == simple_past_verb.toLowerCase())
+        if (verb.simple_past.toLowerCase().trim() == simple_past_verb.toLowerCase().trim())
             validationColors('simple_past_div', 'simple_past_icon_success', 'success');
         else
             validationColors('simple_past_div', 'simple_past_icon_error', 'error');
@@ -95,7 +95,7 @@ function search() {
         alert('You must write a simple past verb!');
 
     if (past_participle_verb != "") {
-        if (verb.past_participle.toLowerCase() == past_participle_verb.toLowerCase())
+        if (verb.past_participle.toLowerCase().trim() == past_participle_verb.toLowerCase().trim())
             validationColors('past_participle_div', 'past_participle_icon_success', 'success');
         else
             validationColors('past_participle_div', 'past_participle_icon_error', 'error');
