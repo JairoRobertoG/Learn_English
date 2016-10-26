@@ -35,29 +35,30 @@ var verbs = [
                 { id: 33, spanish: 'Escuchar', base_form: 'Listen', simple_past: 'Listened', past_participle: 'Listened', irregular: false }
 ];
 
-function clear() {
-    document.getElementById('simple_past_icon_success').style.visibility = "hidden";
-    document.getElementById('simple_past_icon_error').style.visibility = "hidden";
-    document.getElementById("simple_past_div").className = "form-group col-sm-4";
-
-    document.getElementById('past_participle_icon_success').style.visibility = "hidden";
-    document.getElementById('past_participle_icon_error').style.visibility = "hidden";
-    document.getElementById("past_participle_div").className = "form-group col-sm-4";
-
-    document.getElementById('spanish').innerText = "";
-}
-
-clear();
-
 var select_list = document.getElementById('verb_list');
 
-for (var i = 0; i < verbs.length; i++) {
-    var verb = verbs[i];
-    var element = document.createElement('option');
-    element.value = verb.base_form;
-    element.textContent = verb.base_form;
-    select_list.appendChild(element);
+if (select_list != undefined) {
+    function clear() {
+        document.getElementById('simple_past_icon_success').style.visibility = "hidden";
+        document.getElementById('simple_past_icon_error').style.visibility = "hidden";
+        document.getElementById("simple_past_div").className = "form-group col-sm-4";
+
+        document.getElementById('past_participle_icon_success').style.visibility = "hidden";
+        document.getElementById('past_participle_icon_error').style.visibility = "hidden";
+        document.getElementById("past_participle_div").className = "form-group col-sm-4";
+
+        document.getElementById('spanish').innerText = "";
+    }
+    clear();
+    for (var i = 0; i < verbs.length; i++) {
+        var verb = verbs[i];
+        var element = document.createElement('option');
+        element.value = verb.base_form;
+        element.textContent = verb.base_form;
+        select_list.appendChild(element);
+    }
 }
+
 
 window.onload = function () {
     select_list.onchange = function () {
@@ -132,4 +133,29 @@ function playAudio(verb_id) {
     else
         alert('select a verb!')
     
-}      
+}
+
+tbody = document.getElementById('match-data');
+if (tbody != undefined) {
+    var tr, td;
+    for (var i = 0; i < verbs.length; i++) {
+        tr = tbody.insertRow(tbody.rows.length);
+
+        td = tr.insertCell(tr.cells.length);
+        td.innerHTML = verbs[i].base_form;
+        td = tr.insertCell(tr.cells.length);
+        td.innerHTML = verbs[i].simple_past;
+        td = tr.insertCell(tr.cells.length);
+        td.innerHTML = verbs[i].past_participle;
+
+        td = tr.insertCell(tr.cells.length);
+        td.innerHTML = verbs[i].spanish;
+
+        td = tr.insertCell(tr.cells.length);
+        if (verbs[i].irregular)
+            td.innerHTML = 'Irregular';
+        else
+            td.innerHTML = 'Regular';
+    }
+
+}

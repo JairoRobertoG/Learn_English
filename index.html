@@ -16,7 +16,24 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <h1 class="text-center">Regular and irregular verbs</h1>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Desplegar navegación</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Learn English</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="table-verbs.html"><i class="glyphicon glyphicon-book"></i> Table Verbs</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <audio id="verb_audio">
         <source id="audio" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -103,6 +120,8 @@
         </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/list-verbs.js"></script>
 </body>
 </html>
