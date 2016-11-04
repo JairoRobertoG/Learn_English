@@ -35,7 +35,37 @@ var verbs = [
                 { id: 33, spanish: 'Escuchar', base_form: 'Listen', simple_past: 'Listened', past_participle: 'Listened', irregular: false, lesson: 1 },
                 //lesson 2
                 { id: 34, spanish: 'Traer', base_form: 'Bring', simple_past: 'Brought', past_participle: 'Brought', irregular: true, lesson: 2 },
-                { id: 35, spanish: 'Atrapar', base_form: 'Catch', simple_past: 'Caught', past_participle: 'Caught', irregular: true, lesson: 2 }
+                { id: 35, spanish: 'Atrapar', base_form: 'Catch', simple_past: 'Caught', past_participle: 'Caught', irregular: true, lesson: 2 },
+                { id: 36, spanish: 'So\u00f1ar', base_form: 'Dream', simple_past: 'Dreamt', past_participle: 'Dreamt', irregular: true, lesson: 2 },
+                { id: 37, spanish: 'Herir, Lastimar, Doler', base_form: 'Hurt', simple_past: 'Hurt', past_participle: 'Hurt', irregular: true, lesson: 2 },
+                { id: 38, spanish: 'Poner', base_form: 'Put', simple_past: 'Put', past_participle: 'Put', irregular: true, lesson: 2 },
+                { id: 39, spanish: 'Pensar', base_form: 'Think', simple_past: 'Thought', past_participle: 'Thought', irregular: true, lesson: 2 },
+                { id: 40, spanish: 'Contar/Decirle a', base_form: 'Tell', simple_past: 'Told', past_participle: 'Told', irregular: true, lesson: 2 },
+                { id: 41, spanish: 'Decir', base_form: 'Say', simple_past: 'Said', past_participle: 'Said', irregular: true, lesson: 2 },
+                { id: 42, spanish: 'Comenzar/Empezar', base_form: 'Begin', simple_past: 'Began', past_participle: 'Begun', irregular: true, lesson: 2 },
+                { id: 43, spanish: 'Llegar a ser/Convertirse en', base_form: 'Become', simple_past: 'Became', past_participle: 'Became', irregular: true, lesson: 2 },
+                { id: 44, spanish: 'Escoger/Elegir', base_form: 'Choose', simple_past: 'Chose', past_participle: 'Chosen', irregular: true, lesson: 2 },
+                { id: 45, spanish: 'Cortar', base_form: 'Cut', simple_past: 'Cut', past_participle: 'Cut', irregular: true, lesson: 2 },
+                { id: 46, spanish: 'Sentir(se)', base_form: 'Feel', simple_past: 'Felt', past_participle: 'Felt', irregular: true, lesson: 2 },
+                { id: 47, spanish: 'Volar', base_form: 'Fly', simple_past: 'Flew', past_participle: 'Flown', irregular: true, lesson: 2 },
+                { id: 48, spanish: 'Olvidar', base_form: 'Forget', simple_past: 'Forgot', past_participle: 'Forgotten', irregular: true, lesson: 2 },
+                { id: 49, spanish: 'O\u00edr', base_form: 'Hear', simple_past: 'Heard', past_participle: 'Heard', irregular: true, lesson: 2 },
+                { id: 50, spanish: 'Golpear', base_form: 'Hit', simple_past: 'Hit', past_participle: 'Hit', irregular: true, lesson: 2 },
+                { id: 51, spanish: 'Sostener/Agarrar/Esperar', base_form: 'Hold', simple_past: 'Held', past_participle: 'Held', irregular: true, lesson: 2 },
+                { id: 52, spanish: 'Guardar/Mantener/Conservar', base_form: 'Keep', simple_past: 'Kept', past_participle: 'Kept', irregular: true, lesson: 2 },
+                { id: 53, spanish: 'Conocer(1a vez)/Verse con/Reunirse con', base_form: 'Meet', simple_past: 'Met', past_participle: 'Met', irregular: true, lesson: 2 },
+                { id: 54, spanish: 'Irse de/Dejar/Abandonar', base_form: 'Leave', simple_past: 'Left', past_participle: 'Left', irregular: true, lesson: 2 },
+                { id: 55, spanish: 'Saber/Conocer', base_form: 'Know', simple_past: 'Knew', past_participle: 'Known', irregular: true, lesson: 2 },
+                { id: 56, spanish: 'Prestar', base_form: 'Lend', simple_past: 'Lent', past_participle: 'Lent', irregular: true, lesson: 2 },
+                { id: 57, spanish: 'Pagar', base_form: 'Pay', simple_past: 'Paid', past_participle: 'Paid', irregular: true, lesson: 2 },
+                { id: 58, spanish: 'Arreglar', base_form: 'Fix', simple_past: 'Fixed', past_participle: 'Fixed', irregular: false, lesson: 2 },
+                { id: 59, spanish: 'Querer', base_form: 'Want', simple_past: 'Wanted', past_participle: 'Wanted', irregular: false, lesson: 2 },
+                { id: 60, spanish: 'Gustar', base_form: 'Like', simple_past: 'Liked', past_participle: 'Liked', irregular: false, lesson: 2 },
+                { id: 61, spanish: 'Odiar', base_form: 'Hate', simple_past: 'Hated', past_participle: 'Hated', irregular: false, lesson: 2 },
+                { id: 62, spanish: 'Amar', base_form: 'Love', simple_past: 'Loved', past_participle: 'Loved', irregular: false, lesson: 2 },
+                { id: 63, spanish: 'Usar/Utilizar', base_form: 'Use', simple_past: 'Used', past_participle: 'Used', irregular: false, lesson: 2 },
+                { id: 64, spanish: 'Necesitar', base_form: 'Need', simple_past: 'Needed', past_participle: 'Needed', irregular: false, lesson: 2 },
+                { id: 65, spanish: 'Llamar', base_form: 'Call', simple_past: 'Called', past_participle: 'Called', irregular: false, lesson: 2 }
 ];
 
 var select_list = document.getElementById('verb_list');
@@ -56,9 +86,15 @@ if (select_list != undefined) {
 }
 
 function selectedLessons(combo_box) {
-    var x = document.getElementById("verb_list");
-    if (x != undefined) {
-        x.length = 0;
+    var verb_list = document.getElementById("verb_list");
+    if (combo_box.value != '0') {
+        if (verb_list != undefined) {
+            cleanVerbList(verb_list);
+        }
+    }
+    else {
+        cleanVerbList(verb_list);
+        document.getElementById('image-verb').src = 'images/verbs/white.jpg';
     }
     
     for (var i = 0; i < verbs.length; i++) {
@@ -70,13 +106,21 @@ function selectedLessons(combo_box) {
             element.textContent = verb.base_form;
             select_list.appendChild(element);
         }
-        
     }
+}
+
+function cleanVerbList(verb_list) {
+    verb_list.length = 0;
+    var element = document.createElement('option');
+    element.value = '';
+    element.textContent = '--Select the verb--';
+    select_list.appendChild(element);
 }
 
 window.onload = function () {
 
     select_lesson.onchange = function () {
+        document.getElementById('image-verb').src = 'images/verbs/white.jpg';
         clear();
         selectedLessons(this);
     }
@@ -104,7 +148,6 @@ function search() {
     var simple_past_verb = document.getElementById("simple_past").value;
     var past_participle_verb = document.getElementById("past_participle").value;
     var verb = verbs.find(x => x.base_form == select_list.value);
-
     clear();
 
     if (simple_past_verb != "") {
