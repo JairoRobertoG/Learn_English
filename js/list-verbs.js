@@ -118,30 +118,39 @@ function cleanVerbList(verb_list) {
 }
 
 window.onload = function () {
+    var table_verbs = document.getElementById("select_lesson_list");
 
-    select_lesson.onchange = function () {
-        document.getElementById('image-verb').src = 'images/verbs/white.jpg';
-        clear();
-        selectedLessons(this);
-    }
-
-    select_list.onchange = function () {
-        clear();
-        document.getElementById("simple_past").value = "";
-        past_participle_verb = document.getElementById("past_participle").value = "";
-        document.getElementById("simple_past").style.border = "";
-        document.getElementById("past_participle").style.border = "";
-
-        var verb_name = this.value;
-
-        if(verb_name != "")
-            document.getElementById('image-verb').src = 'images/verbs/' + verb_name.toLowerCase() + '_opt.jpg';
-        else
+    if (table_verbs == null) {
+        select_lesson.onchange = function () {
             document.getElementById('image-verb').src = 'images/verbs/white.jpg';
+            clear();
+            selectedLessons(this);
+        }
 
-        var spanish_verb = verbs.find(x => x.base_form == verb_name).spanish;
-        document.getElementById('spanish').innerText = spanish_verb;
+        select_list.onchange = function () {
+            clear();
+            document.getElementById("simple_past").value = "";
+            past_participle_verb = document.getElementById("past_participle").value = "";
+            document.getElementById("simple_past").style.border = "";
+            document.getElementById("past_participle").style.border = "";
+
+            var verb_name = this.value;
+
+            if (verb_name != "")
+                document.getElementById('image-verb').src = 'images/verbs/' + verb_name.toLowerCase() + '_opt.jpg';
+            else
+                document.getElementById('image-verb').src = 'images/verbs/white.jpg';
+
+            var spanish_verb = verbs.find(x => x.base_form == verb_name).spanish;
+            document.getElementById('spanish').innerText = spanish_verb;
+        }
     }
+    else {
+        select_lesson_list.onchange = function () {
+            fillTableVerbs(this.value);
+        }
+    }
+    
 }
 
 function search() {
@@ -195,30 +204,50 @@ function playAudio(verb_id) {
     }
     else
         alert('select a verb!')
-    
 }
 
-tbody = document.getElementById('match-data');
-if (tbody != undefined) {
-    var tr, td;
-    for (var i = 0; i < verbs.length; i++) {
+fillTableVerbs(0);
+
+function fillTableVerbs(lesson) {
+    tbody = document.getElementById('match-data');
+
+    if (tbody != undefined) {
+        var tr, td;
+        document.getElementById("match-data").innerHTML = "";
+        if (lesson > 0) {
+            var verbs_list = [];
+            for (var i = 0; i < verbs.length ; i++) {
+
+                if (verbs[i].lesson == lesson) {
+                    verbs_list.push(verbs[i]);
+                }
+            }
+            fillTable(verbs_list);
+        }
+        else
+            fillTable(verbs);
+    }
+}
+
+function fillTable(verbs_list) {
+
+    for (var i = 0; i < verbs_list.length; i++) {
         tr = tbody.insertRow(tbody.rows.length);
 
         td = tr.insertCell(tr.cells.length);
-        td.innerHTML = verbs[i].base_form;
+        td.innerHTML = verbs_list[i].base_form;
         td = tr.insertCell(tr.cells.length);
-        td.innerHTML = verbs[i].simple_past;
+        td.innerHTML = verbs_list[i].simple_past;
         td = tr.insertCell(tr.cells.length);
-        td.innerHTML = verbs[i].past_participle;
+        td.innerHTML = verbs_list[i].past_participle;
 
         td = tr.insertCell(tr.cells.length);
-        td.innerHTML = verbs[i].spanish;
+        td.innerHTML = verbs_list[i].spanish;
 
         td = tr.insertCell(tr.cells.length);
-        if (verbs[i].irregular)
+        if (verbs_list[i].irregular)
             td.innerHTML = 'Irregular';
         else
             td.innerHTML = 'Regular';
     }
-
 }

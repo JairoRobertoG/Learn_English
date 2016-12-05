@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Learn English Application</title>
+    <link href="images/icon/learn-english-application-icon.ico" rel="shortcut icon" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="user-scalable=no" />
@@ -32,7 +33,23 @@
             </ul>
         </div>
     </nav>
+
     <h1 class="text-center">List Verbs</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="col-md-4">
+                <label>Select the Lesson: </label>    
+            </div>
+            <div class="col-md-6">
+                <select id="select_lesson_list" class="form-control">
+                    <option value="0">--Select the lesson--</option>
+                    <option value="1">Lesson 1</option>
+                    <option value="2">Lesson 2</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <br />
     <table id="verbs-table" class="table table-bordered table-hover">
         <thead>
             <tr>
