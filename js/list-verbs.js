@@ -43,7 +43,7 @@ var verbs = [
                 { id: 40, spanish: 'Contar/Decirle a', base_form: 'Tell', simple_past: 'Told', past_participle: 'Told', irregular: true, lesson: 2 },
                 { id: 41, spanish: 'Decir', base_form: 'Say', simple_past: 'Said', past_participle: 'Said', irregular: true, lesson: 2 },
                 { id: 42, spanish: 'Comenzar/Empezar', base_form: 'Begin', simple_past: 'Began', past_participle: 'Begun', irregular: true, lesson: 2 },
-                { id: 43, spanish: 'Llegar a ser/Convertirse en', base_form: 'Become', simple_past: 'Became', past_participle: 'Became', irregular: true, lesson: 2 },
+                { id: 43, spanish: 'Llegar a ser/Convertirse en', base_form: 'Become', simple_past: 'Became', past_participle: 'Become', irregular: true, lesson: 2 },
                 { id: 44, spanish: 'Escoger/Elegir', base_form: 'Choose', simple_past: 'Chose', past_participle: 'Chosen', irregular: true, lesson: 2 },
                 { id: 45, spanish: 'Cortar', base_form: 'Cut', simple_past: 'Cut', past_participle: 'Cut', irregular: true, lesson: 2 },
                 { id: 46, spanish: 'Sentir(se)', base_form: 'Feel', simple_past: 'Felt', past_participle: 'Felt', irregular: true, lesson: 2 },
@@ -65,7 +65,8 @@ var verbs = [
                 { id: 62, spanish: 'Amar', base_form: 'Love', simple_past: 'Loved', past_participle: 'Loved', irregular: false, lesson: 2 },
                 { id: 63, spanish: 'Usar/Utilizar', base_form: 'Use', simple_past: 'Used', past_participle: 'Used', irregular: false, lesson: 2 },
                 { id: 64, spanish: 'Necesitar', base_form: 'Need', simple_past: 'Needed', past_participle: 'Needed', irregular: false, lesson: 2 },
-                { id: 65, spanish: 'Llamar', base_form: 'Call', simple_past: 'Called', past_participle: 'Called', irregular: false, lesson: 2 }
+                { id: 65, spanish: 'Llamar', base_form: 'Call', simple_past: 'Called', past_participle: 'Called', irregular: false, lesson: 2 },
+                //Lesson 3
 ];
 
 var select_list = document.getElementById('verb_list');
@@ -230,7 +231,6 @@ function fillTableVerbs(lesson) {
 }
 
 function fillTable(verbs_list) {
-
     for (var i = 0; i < verbs_list.length; i++) {
         tr = tbody.insertRow(tbody.rows.length);
 
@@ -250,4 +250,23 @@ function fillTable(verbs_list) {
         else
             td.innerHTML = 'Regular';
     }
+}
+
+function searchSpecificVerb() {
+    if (search_verb.value != '') {
+        tbody = document.getElementById('match-data');
+
+        var tr, td;
+        document.getElementById("match-data").innerHTML = "";
+        var verbs_list = [];
+        for (var i = 0; i < verbs.length ; i++) {
+            if (verbs[i].base_form.toLowerCase() == search_verb.value.toLowerCase()) {
+                verbs_list.push(verbs[i]);
+                break;
+            }
+        }
+        fillTable(verbs_list);
+    }
+    else
+        alert('The verb text is empty')
 }
