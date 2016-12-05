@@ -67,6 +67,38 @@ var verbs = [
                 { id: 64, spanish: 'Necesitar', base_form: 'Need', simple_past: 'Needed', past_participle: 'Needed', irregular: false, lesson: 2 },
                 { id: 65, spanish: 'Llamar', base_form: 'Call', simple_past: 'Called', past_participle: 'Called', irregular: false, lesson: 2 },
                 //Lesson 3
+                { id: 66, spanish: 'Costar', base_form: 'Cost', simple_past: 'Cost', past_participle: 'Cost', irregular: true, lesson: 3 },
+                { id: 67, spanish: 'Dibujar', base_form: 'Draw', simple_past: 'Drew', past_participle: 'Drawn', irregular: true, lesson: 3 },
+                { id: 68, spanish: 'Crecer', base_form: 'Grow', simple_past: 'Grew', past_participle: 'Grown', irregular: true, lesson: 3 },
+                { id: 69, spanish: 'Permitir', base_form: 'Let', simple_past: 'Let', past_participle: 'Let', irregular: true, lesson: 3 },
+                { id: 70, spanish: 'Ver', base_form: 'See', simple_past: 'Saw', past_participle: 'Seen', irregular: true, lesson: 3 },
+                { id: 71, spanish: 'Vender', base_form: 'Sell', simple_past: 'Sold', past_participle: 'Sold', irregular: true, lesson: 3 },
+                { id: 72, spanish: 'Enviar', base_form: 'Send', simple_past: 'Sent', past_participle: 'Sent', irregular: true, lesson: 3 },
+                { id: 73, spanish: 'Cerrar', base_form: 'Shut', simple_past: 'Shut', past_participle: 'Shut', irregular: true, lesson: 3 },
+                { id: 74, spanish: 'Cantar', base_form: 'Sing', simple_past: 'Sang', past_participle: 'Sung', irregular: true, lesson: 3 },
+                { id: 75, spanish: 'Sentarse', base_form: 'Sit', simple_past: 'Sat', past_participle: 'Sat', irregular: true, lesson: 3 },
+                { id: 76, spanish: 'Dormir', base_form: 'Sleep', simple_past: 'Slept', past_participle: 'Slept', irregular: true, lesson: 3 },
+                { id: 77, spanish: 'Gastar', base_form: 'Spend', simple_past: 'Spent', past_participle: 'Spent', irregular: true, lesson: 3 },
+                { id: 78, spanish: 'Robar', base_form: 'Steal', simple_past: 'Stole', past_participle: 'Stolen', irregular: true, lesson: 3 },
+                { id: 79, spanish: 'Enseñar', base_form: 'Teach', simple_past: 'Tahght', past_participle: 'Tahght', irregular: true, lesson: 3 },
+                { id: 80, spanish: 'Lanzar/Tirar', base_form: 'Throw', simple_past: 'Threw', past_participle: 'Threwn', irregular: true, lesson: 3 },
+                { id: 81, spanish: 'Entender', base_form: 'Understand', simple_past: 'Understood', past_participle: 'Understood', irregular: true, lesson: 3 },
+                { id: 82, spanish: 'Subir/Incrementar', base_form: 'Rise', simple_past: 'Rose', past_participle: 'Risen', irregular: true, lesson: 3 },
+                { id: 83, spanish: 'Sonar', base_form: 'Ring', simple_past: 'Rang', past_participle: 'Rung', irregular: true, lesson: 3 },
+                { id: 84, spanish: 'Colgar/Ahorcar', base_form: 'Hang', simple_past: 'Hung', past_participle: 'Hung', irregular: true, lesson: 3 },
+                { id: 85, spanish: 'Ponerse/Estar de Pie', base_form: 'Stand', simple_past: 'Stood', past_participle: 'Stood', irregular: true, lesson: 3 },
+                { id: 86, spanish: 'Despertar', base_form: 'Wake', simple_past: 'Woke', past_participle: 'Woken', irregular: true, lesson: 3 },
+                { id: 87, spanish: 'Llevar/Traer Puesto', base_form: 'Wear', simple_past: 'Wore', past_participle: 'Worn', irregular: true, lesson: 3 },
+                { id: 88, spanish: 'Ganar', base_form: 'Win', simple_past: 'Won', past_participle: 'Won', irregular: true, lesson: 3 },
+                { id: 89, spanish: 'Aprender', base_form: 'Learn', simple_past: 'Learnt', past_participle: 'Learnt', irregular: true, lesson: 3 },
+                { id: 90, spanish: 'Contestar', base_form: 'Answer', simple_past: 'Answered', past_participle: 'Answered', irregular: false, lesson: 3 },
+                { id: 91, spanish: 'Llegar', base_form: 'Arrive', simple_past: 'Arrived', past_participle: 'Arrived', irregular: false, lesson: 3 },
+                { id: 92, spanish: 'Pedir/Preguntar', base_form: 'Ask', simple_past: 'Asked', past_participle: 'Asked', irregular: false, lesson: 3 },
+                { id: 93, spanish: 'Creer', base_form: 'Believe', simple_past: 'Believed', past_participle: 'Believed', irregular: false, lesson: 3 },
+                { id: 94, spanish: 'Cepillar', base_form: 'Brush', simple_past: 'Brushed', past_participle: 'Brushed', irregular: false, lesson: 3 },
+                { id: 95, spanish: 'Limpiar', base_form: 'Clean', simple_past: 'Cleaned', past_participle: 'Cleaned', irregular: false, lesson: 3 },
+                { id: 96, spanish: 'Bailar', base_form: 'Dance', simple_past: 'Danced', past_participle: 'Danced', irregular: false, lesson: 3 },
+                { id: 97, spanish: 'Brincar', base_form: 'Jump', simple_past: 'Jumped', past_participle: 'Jumped', irregular: false, lesson: 3 },
 ];
 
 var select_list = document.getElementById('verb_list');
@@ -250,12 +282,13 @@ function fillTable(verbs_list) {
         else
             td.innerHTML = 'Regular';
     }
+    document.getElementById('search_verb').value = '';
 }
 
 function searchSpecificVerb() {
     if (search_verb.value != '') {
         tbody = document.getElementById('match-data');
-
+        
         var tr, td;
         document.getElementById("match-data").innerHTML = "";
         var verbs_list = [];
