@@ -80,7 +80,7 @@ var verbs = [
                 { id: 76, spanish: 'Dormir', base_form: 'Sleep', simple_past: 'Slept', past_participle: 'Slept', irregular: true, lesson: 3 },
                 { id: 77, spanish: 'Gastar', base_form: 'Spend', simple_past: 'Spent', past_participle: 'Spent', irregular: true, lesson: 3 },
                 { id: 78, spanish: 'Robar', base_form: 'Steal', simple_past: 'Stole', past_participle: 'Stolen', irregular: true, lesson: 3 },
-                { id: 79, spanish: 'Ense\u00f1ar', base_form: 'Teach', simple_past: 'Tahght', past_participle: 'Tahght', irregular: true, lesson: 3 },
+                { id: 79, spanish: 'Ense\u00f1ar', base_form: 'Teach', simple_past: 'Taught', past_participle: 'Taught', irregular: true, lesson: 3 },
                 { id: 80, spanish: 'Lanzar/Tirar', base_form: 'Throw', simple_past: 'Threw', past_participle: 'Threwn', irregular: true, lesson: 3 },
                 { id: 81, spanish: 'Entender', base_form: 'Understand', simple_past: 'Understood', past_participle: 'Understood', irregular: true, lesson: 3 },
                 { id: 82, spanish: 'Subir/Incrementar', base_form: 'Rise', simple_past: 'Rose', past_participle: 'Risen', irregular: true, lesson: 3 },
