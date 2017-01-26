@@ -218,13 +218,20 @@ function validationColors(div_id, icon_id, success) {
 
 function playAudio(verb_id) {
     var select_list = document.getElementById('verb_list');
-    if (select_list.value != "") {
-        var irregular_verb = verbs.find(x => x.base_form == select_list.value).irregular;
 
-        if (!irregular_verb && verb_id != 'base_form_audio')
+    if (select_list.value != "") {
+        var verb = verbs.find(x => x.base_form == select_list.value);
+
+        if (!verb.irregular && verb_id != 'base_form_audio')
             document.getElementById("audio").src = 'audios/regular_verb_audio/' + select_list.value.toLowerCase() + 'ed' + '.mp3';
-        else
-            document.getElementById("audio").src = 'audios/' + verb_id + '/' + select_list.value.toLowerCase() + '.mp3';
+        else {
+            if (verb_id == 'base_form_audio')
+                document.getElementById("audio").src = 'audios/' + verb_id + '/' + select_list.value.toLowerCase() + '.mp3';
+            else if (verb_id == 'simple_past_audio')
+                document.getElementById("audio").src = 'audios/' + verb_id + '/' + verb.simple_past.toLowerCase() + '.mp3';
+            else if (verb_id == 'past_participle_audio')
+                document.getElementById("audio").src = 'audios/' + verb_id + '/' + verb.past_participle.toLowerCase() + '.mp3';
+        }
 
         var sound = document.getElementById("verb_audio");
 
