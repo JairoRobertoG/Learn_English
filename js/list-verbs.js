@@ -310,3 +310,7 @@ function searchSpecificVerb() {
     else
         alert('The verb text is empty')
 }
+
+function fillImages() {
+    
+}
