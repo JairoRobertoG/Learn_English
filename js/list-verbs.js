@@ -99,6 +99,8 @@ var verbs = [
                 { id: 95, spanish: 'Limpiar', base_form: 'Clean', simple_past: 'Cleaned', past_participle: 'Cleaned', irregular: false, lesson: 3 },
                 { id: 96, spanish: 'Bailar', base_form: 'Dance', simple_past: 'Danced', past_participle: 'Danced', irregular: false, lesson: 3 },
                 { id: 97, spanish: 'Brincar', base_form: 'Jump', simple_past: 'Jumped', past_participle: 'Jumped', irregular: false, lesson: 3 },
+                { id: 98, spanish: 'Alimentar', base_form: 'Feed', simple_past: 'fed', past_participle: 'fed', irregular: true, lesson: 4 },
+                { id: 99, spanish: 'Pelear', base_form: 'Fight', simple_past: 'Fought', past_participle: 'Fought', irregular: true, lesson: 4 },
 ];
 
 var select_list = document.getElementById('verb_list');
@@ -300,7 +302,7 @@ function searchSpecificVerb() {
         document.getElementById("match-data").innerHTML = "";
         var verbs_list = [];
         for (var i = 0; i < verbs.length ; i++) {
-            if (verbs[i].base_form.toLowerCase() == search_verb.value.toLowerCase()) {
+            if (verbs[i].base_form.toLowerCase().trim() == search_verb.value.toLowerCase().trim()) {
                 verbs_list.push(verbs[i]);
                 break;
             }

@@ -36,52 +36,28 @@
         </div>
     </nav>
 
-    <h1 class="text-center">List Verbs</h1>
+    <audio id="verb_audio">
+        <source id="audio" type="audio/mpeg" >
+        Your browser does not support the audio element.
+    </audio>
+
+    <h1 class="text-center">Spelling</h1>
     <div class="row">
         <div class="col-md-4">
             <div class="col-md-4">
-                <label>Search the Verb: </label>
+                <label>Word to spell: </label>
             </div>
             <div class="col-md-6">
-                <input id="search_verb" type="text" class="form-control" placeholder="write the base form"/>
+                <input id="word_to_spell" type="text" class="form-control" placeholder="word to spell"/>
             </div>
             <div class="col-md-2">
-                <input type="button" class="btn btn-primary" value="Search" onclick="searchSpecificVerb()"/>
+                <input type="button" class="btn btn-primary" value="Spell" onclick="spellWord()"/>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="col-md-4">
-                <label>Select the Lesson: </label>    
-            </div>
-            <div class="col-md-6">
-                <select id="select_lesson_list" class="form-control">
-                    <option value="0">--Select the lesson--</option>
-                    <option value="1">Lesson 1</option>
-                    <option value="2">Lesson 2</option>
-                    <option value="3">Lesson 3</option>
-                </select>
-            </div>
-        </div>
-    </div>
-    <br />
-    <table id="verbs-table" class="table table-bordered table-hover">
-        <thead>
-            <tr>
-                <th>Base Form</th>
-                <th>Simple Past</th>
-                <th>Past Participle</th>
-                <th>Spanish</th>
-                <th>Type Verb</th>
-            </tr>
-        </thead>
-        <tbody id="match-data">
-        </tbody>
-    </table>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/list-verbs.js"></script>
+    <script src="js/spelling.js"></script>
 </body>
 </html>
