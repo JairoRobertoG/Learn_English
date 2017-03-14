@@ -99,8 +99,18 @@ var verbs = [
                 { id: 95, spanish: 'Limpiar', base_form: 'Clean', simple_past: 'Cleaned', past_participle: 'Cleaned', irregular: false, lesson: 3 },
                 { id: 96, spanish: 'Bailar', base_form: 'Dance', simple_past: 'Danced', past_participle: 'Danced', irregular: false, lesson: 3 },
                 { id: 97, spanish: 'Brincar', base_form: 'Jump', simple_past: 'Jumped', past_participle: 'Jumped', irregular: false, lesson: 3 },
-                { id: 98, spanish: 'Alimentar', base_form: 'Feed', simple_past: 'fed', past_participle: 'fed', irregular: true, lesson: 4 },
+                { id: 98, spanish: 'Alimentar', base_form: 'Feed', simple_past: 'Fed', past_participle: 'Fed', irregular: true, lesson: 4 },
                 { id: 99, spanish: 'Pelear', base_form: 'Fight', simple_past: 'Fought', past_participle: 'Fought', irregular: true, lesson: 4 },
+                { id: 100, spanish: 'Perdonar', base_form: 'Forgive', simple_past: 'Forgave', past_participle: 'Forgiven', irregular: true, lesson: 4 },
+                { id: 101, spanish: 'Esconder', base_form: 'Hide', simple_past: 'Hid', past_participle: 'Hidden', irregular: true, lesson: 4 },
+                { id: 102, spanish: 'Quedar', base_form: 'Fit', simple_past: 'Fit', past_participle: 'Fit', irregular: true, lesson: 4 },
+                { id: 103, spanish: 'Congelar', base_form: 'Freeze', simple_past: 'Froze', past_participle: 'Frozen', irregular: true, lesson: 4 },
+                { id: 104, spanish: 'Golpear', base_form: 'Beat', simple_past: 'Beat', past_participle: 'Beaten', irregular: true, lesson: 4 },
+                { id: 105, spanish: 'Apostar', base_form: 'Bet', simple_past: 'Bet', past_participle: 'Bet', irregular: true, lesson: 4 },
+                { id: 106, spanish: 'Morder', base_form: 'Bite', simple_past: 'Bit', past_participle: 'Bitten', irregular: true, lesson: 4 },
+                { id: 107, spanish: 'Sangrar', base_form: 'Bleed', simple_past: 'Bled', past_participle: 'Bled', irregular: true, lesson: 4 },
+                { id: 108, spanish: 'Soplar/Estallar', base_form: 'Blow', simple_past: 'Blew', past_participle: 'Blown', irregular: true, lesson: 4 },
+                { id: 109, spanish: 'Quemar', base_form: 'Burn', simple_past: 'Burnt', past_participle: 'Burnt', irregular: true, lesson: 4 },
 ];
 
 var select_list = document.getElementById('verb_list');
