@@ -1,4 +1,4 @@
-function reproducir() {
+function spellingWord() {
     var palabra = document.getElementById("word_to_spell");
     if(palabra.value.length ==0){
         alert("Nada que deletrear");
@@ -14,7 +14,7 @@ function reproducir() {
             playSound('audios/alphabet/' + word_to_spell[i].toUpperCase() + word_to_spell[i].toLowerCase() + '.mp3');
             i++;
             spellConTime(i);
-        }, 2500);
+        }, 1500);
     }
     spellConTime(0);
 }

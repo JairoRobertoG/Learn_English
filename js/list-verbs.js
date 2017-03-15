@@ -99,6 +99,7 @@ var verbs = [
                 { id: 95, spanish: 'Limpiar', base_form: 'Clean', simple_past: 'Cleaned', past_participle: 'Cleaned', irregular: false, lesson: 3 },
                 { id: 96, spanish: 'Bailar', base_form: 'Dance', simple_past: 'Danced', past_participle: 'Danced', irregular: false, lesson: 3 },
                 { id: 97, spanish: 'Brincar', base_form: 'Jump', simple_past: 'Jumped', past_participle: 'Jumped', irregular: false, lesson: 3 },
+                //lesson 4
                 { id: 98, spanish: 'Alimentar', base_form: 'Feed', simple_past: 'Fed', past_participle: 'Fed', irregular: true, lesson: 4 },
                 { id: 99, spanish: 'Pelear', base_form: 'Fight', simple_past: 'Fought', past_participle: 'Fought', irregular: true, lesson: 4 },
                 { id: 100, spanish: 'Perdonar', base_form: 'Forgive', simple_past: 'Forgave', past_participle: 'Forgiven', irregular: true, lesson: 4 },
@@ -111,6 +112,27 @@ var verbs = [
                 { id: 107, spanish: 'Sangrar', base_form: 'Bleed', simple_past: 'Bled', past_participle: 'Bled', irregular: true, lesson: 4 },
                 { id: 108, spanish: 'Soplar/Estallar', base_form: 'Blow', simple_past: 'Blew', past_participle: 'Blown', irregular: true, lesson: 4 },
                 { id: 109, spanish: 'Quemar', base_form: 'Burn', simple_past: 'Burnt', past_participle: 'Burnt', irregular: true, lesson: 4 },
+                { id: 110, spanish: 'Cavar', base_form: 'Dig', simple_past: 'Dug', past_participle: 'Dug', irregular: true, lesson: 4 },
+                { id: 111, spanish: 'Sumergirse', base_form: 'Dive', simple_past: 'Dove', past_participle: 'Diven', irregular: true, lesson: 4 },
+                { id: 112, spanish: 'Afeitarse', base_form: 'Shave', simple_past: 'Shaved', past_participle: 'Shaven', irregular: true, lesson: 4 },
+                { id: 113, spanish: 'Brillar', base_form: 'Shine', simple_past: 'Shone', past_participle: 'Shone', irregular: true, lesson: 4 },
+                { id: 114, spanish: 'Prohibir', base_form: 'Forbid', simple_past: 'Forbade', past_participle: 'Forbidden', irregular: true, lesson: 4 },
+                { id: 115, spanish: 'Guiar/Dirigir', base_form: 'Lead', simple_past: 'Led', past_participle: 'Led', irregular: true, lesson: 4 },
+                { id: 116, spanish: 'Recostarse/Yacer', base_form: 'Lie', simple_past: 'Lay', past_participle: 'Lain', irregular: true, lesson: 4 },
+                { id: 117, spanish: 'Encender/Iluminar', base_form: 'Light', simple_past: 'Lit', past_participle: 'Lit', irregular: true, lesson: 4 },
+                { id: 118, spanish: 'Colocar', base_form: 'Set', simple_past: 'Set', past_participle: 'Set', irregular: true, lesson: 4 },
+                { id: 119, spanish: 'Coser', base_form: 'Sew', simple_past: 'Sewed', past_participle: 'Sewn', irregular: true, lesson: 4 },
+                { id: 120, spanish: 'Agitar/Sacudir', base_form: 'Shake', simple_past: 'Shook', past_participle: 'Shaken', irregular: true, lesson: 4 },
+                { id: 121, spanish: 'Encoger(se)', base_form: 'Shrink', simple_past: 'Shrank', past_participle: 'Shrunk', irregular: true, lesson: 4 },
+                { id: 122, spanish: 'Vivir', base_form: 'Live', simple_past: 'Lived', past_participle: 'Lived', irregular: false, lesson: 4 },
+                { id: 123, spanish: 'Llover', base_form: 'Rain', simple_past: 'Rained', past_participle: 'Rained', irregular: false, lesson: 4 },
+                { id: 124, spanish: 'Recordar', base_form: 'Remember', simple_past: 'Remembered', past_participle: 'Remembered', irregular: false, lesson: 4 },
+                { id: 125, spanish: 'Comenzar', base_form: 'Start', simple_past: 'Started', past_participle: 'Started', irregular: false, lesson: 4 },
+                { id: 126, spanish: 'Quedarse/Alojarse', base_form: 'Stay', simple_past: 'Stayed', past_participle: 'Stayed', irregular: false, lesson: 4 },
+                { id: 127, spanish: 'Estudiar', base_form: 'Study', simple_past: 'Studied', past_participle: 'Studied', irregular: false, lesson: 4 },
+                { id: 128, spanish: 'Viajar', base_form: 'Travel', simple_past: 'Traveled', past_participle: 'Traveled', irregular: false, lesson: 4 },
+                { id: 129, spanish: 'Lavar', base_form: 'Wash', simple_past: 'Washed', past_participle: 'Washed', irregular: false, lesson: 4 },
+
 ];
 
 var select_list = document.getElementById('verb_list');
