@@ -326,6 +326,10 @@ function fillTable(verbs_list) {
     document.getElementById('search_verb').value = '';
 }
 
+function fillImagesVerbs() {
+    
+}
+
 function searchSpecificVerb() {
     if (search_verb.value != '') {
         tbody = document.getElementById('match-data');
