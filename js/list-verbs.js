@@ -141,7 +141,7 @@ var verbs = [
 				{ id: 135, spanish: 'Tener ganas de', base_form: 'Feel like', simple_past: 'Felt like', past_participle: 'Felt like', irregular: true, lesson: 5 },
 				{ id: 136, spanish: 'Salir (de algún lugar)', base_form: 'Get out', simple_past: 'Got out', past_participle: 'Gotten out', irregular: true, lesson: 5 },
 				{ id: 137, spanish: 'Salir (usualmente para divertirse)', base_form: 'Go out', simple_past: 'Went out', past_participle: 'Gone out', irregular: true, lesson: 5 },
-				{ id: 138, spanish: 'Mirar', base_form: 'Look st', simple_past: 'Looked at', past_participle: 'Looked at', irregular: false, lesson: 5 },
+				{ id: 138, spanish: 'Mirar', base_form: 'Look at', simple_past: 'Looked at', past_participle: 'Looked at', irregular: false, lesson: 5 },
 				{ id: 139, spanish: 'Decidirse por algo', base_form: 'Make up my mind', simple_past: 'Made up my mind', past_participle: 'Made up my mind', irregular: false, lesson: 5 },
 				{ id: 140, spanish: 'Sufrir de (problemas de salud)', base_form: 'Suffer from', simple_past: 'Suffered from', past_participle: 'Suffered frome', irregular: false, lesson: 5 },
 				{ id: 141, spanish: 'Cuidar', base_form: 'Take care of', simple_past: 'Took care of', past_participle: 'Taken care of', irregular: true, lesson: 5 },
