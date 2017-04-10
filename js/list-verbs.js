@@ -132,6 +132,22 @@ var verbs = [
                 { id: 127, spanish: 'Estudiar', base_form: 'Study', simple_past: 'Studied', past_participle: 'Studied', irregular: false, lesson: 4 },
                 { id: 128, spanish: 'Viajar', base_form: 'Travel', simple_past: 'Traveled', past_participle: 'Traveled', irregular: false, lesson: 4 },
                 { id: 129, spanish: 'Lavar', base_form: 'Wash', simple_past: 'Washed', past_participle: 'Washed', irregular: false, lesson: 4 },
+				//lesson 5
+				{ id: 130, spanish: 'Pedir consejo', base_form: 'Ask for advice', simple_past: 'Asked for advice', past_participle: 'Asked for advice', irregular: false, lesson: 5 },
+				{ id: 131, spanish: 'Terminarse', base_form: 'Be over', simple_past: 'Was/were over', past_participle: 'Was/were over', irregular: false, lesson: 5 },
+				{ id: 132, spanish: 'Venir (visitar a alguien de manera casual)', base_form: 'Come over', simple_past: 'Came over', past_participle: 'Come over', irregular: true, lesson: 5 },
+				{ id: 133, spanish: 'Contar con', base_form: 'Count on', simple_past: 'Counted on', past_participle: 'Counted on', irregular: false, lesson: 5 },
+				{ id: 134, spanish: 'Estar harto', base_form: 'Be fed up', simple_past: 'Was/Were fed up', past_participle: 'Was/Were fed up', irregular: false, lesson: 5 },
+				{ id: 135, spanish: 'Tener ganas de', base_form: 'Feel like', simple_past: 'Felt like', past_participle: 'Felt like', irregular: true, lesson: 5 },
+				{ id: 136, spanish: 'Salir (de algún lugar)', base_form: 'Get out', simple_past: 'Got out', past_participle: 'Gotten out', irregular: true, lesson: 5 },
+				{ id: 137, spanish: 'Salir (usualmente para divertirse)', base_form: 'Go out', simple_past: 'Went out', past_participle: 'Gone out', irregular: true, lesson: 5 },
+				{ id: 138, spanish: 'Mirar', base_form: 'Look st', simple_past: 'Looked at', past_participle: 'Looked at', irregular: false, lesson: 5 },
+				{ id: 139, spanish: 'Decidirse por algo', base_form: 'Make up my mind', simple_past: 'Made up my mind', past_participle: 'Made up my mind', irregular: false, lesson: 5 },
+				{ id: 140, spanish: 'Sufrir de (problemas de salud)', base_form: 'Suffer from', simple_past: 'Suffered from', past_participle: 'Suffered frome', irregular: false, lesson: 5 },
+				{ id: 141, spanish: 'Cuidar', base_form: 'Take care of', simple_past: 'Took care of', past_participle: 'Taken care of', irregular: true, lesson: 5 },
+				{ id: 142, spanish: 'Deshacerse de/Tirar a la basura', base_form: 'Throw away', simple_past: 'Threw away', past_participle: 'Thrown away', irregular: true, lesson: 5 },
+				{ id: 143, spanish: 'Terminar (una relación)', base_form: 'Break up', simple_past: 'Broke up', past_participle: 'Broken up', irregular: true, lesson: 5 },
+
 
 ];
 
