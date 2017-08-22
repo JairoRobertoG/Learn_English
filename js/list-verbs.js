@@ -132,48 +132,57 @@ var verbs = [
                 { id: 127, spanish: 'Estudiar', base_form: 'Study', simple_past: 'Studied', past_participle: 'Studied', irregular: false, lesson: 4 },
                 { id: 128, spanish: 'Viajar', base_form: 'Travel', simple_past: 'Traveled', past_participle: 'Traveled', irregular: false, lesson: 4 },
                 { id: 129, spanish: 'Lavar', base_form: 'Wash', simple_past: 'Washed', past_participle: 'Washed', irregular: false, lesson: 4 },
-				//lesson 5
-				{ id: 130, spanish: 'Pedir consejo', base_form: 'Ask for advice', simple_past: 'Asked for advice', past_participle: 'Asked for advice', irregular: false, lesson: 5 },
-				{ id: 131, spanish: 'Terminarse', base_form: 'Be over', simple_past: 'Was/were over', past_participle: 'Been over', irregular: false, lesson: 5 },
-				{ id: 132, spanish: 'Venir (visitar a alguien de manera casual)', base_form: 'Come over', simple_past: 'Came over', past_participle: 'Come over', irregular: true, lesson: 5 },
-				{ id: 133, spanish: 'Contar con', base_form: 'Count on', simple_past: 'Counted on', past_participle: 'Counted on', irregular: false, lesson: 5 },
-				{ id: 134, spanish: 'Estar harto', base_form: 'Be fed up', simple_past: 'Was/Were fed up', past_participle: 'Been fed up', irregular: false, lesson: 5 },
-				{ id: 135, spanish: 'Tener ganas de', base_form: 'Feel like', simple_past: 'Felt like', past_participle: 'Felt like', irregular: true, lesson: 5 },
-				{ id: 136, spanish: 'Salir (de algún lugar)', base_form: 'Get out', simple_past: 'Got out', past_participle: 'Gotten out', irregular: true, lesson: 5 },
-				{ id: 137, spanish: 'Salir (usualmente para divertirse)', base_form: 'Go out', simple_past: 'Went out', past_participle: 'Gone out', irregular: true, lesson: 5 },
-				{ id: 138, spanish: 'Mirar', base_form: 'Look at', simple_past: 'Looked at', past_participle: 'Looked at', irregular: false, lesson: 5 },
-				{ id: 139, spanish: 'Decidirse por algo', base_form: 'Make up my mind', simple_past: 'Made up my mind', past_participle: 'Made up my mind', irregular: false, lesson: 5 },
-				{ id: 140, spanish: 'Sufrir de (problemas de salud)', base_form: 'Suffer from', simple_past: 'Suffered from', past_participle: 'Suffered from', irregular: false, lesson: 5 },
-				{ id: 141, spanish: 'Cuidar', base_form: 'Take care of', simple_past: 'Took care of', past_participle: 'Taken care of', irregular: true, lesson: 5 },
-				{ id: 142, spanish: 'Deshacerse de/Tirar a la basura', base_form: 'Throw away', simple_past: 'Threw away', past_participle: 'Thrown away', irregular: true, lesson: 5 },
-				{ id: 143, spanish: 'Terminar (una relación)', base_form: 'Break up', simple_past: 'Broke up', past_participle: 'Broken up', irregular: true, lesson: 5 },
-				//lesson 6
-				{ id: 144, spanish: 'Cuidar(por un periodo de tiempo corto)', base_form: 'Babysit', simple_past: 'Babysat', past_participle: 'Babysat', irregular: true, lesson: 6 },
-				{ id: 145, spanish: 'Ayudar con la tarea', base_form: 'Help with homework', simple_past: 'Helped with homework', past_participle: 'Helped with homework', irregular: false, lesson: 6 },
-				{ id: 146, spanish: 'Dar un aventón(a alguien)', base_form: 'Give(someone) a ride', simple_past: 'Gave a ride', past_participle: 'Given a ride', irregular: true, lesson: 6 },
-				{ id: 147, spanish: 'Estar al pendiente de(algo)', base_form: 'Keep an eye on(something)', simple_past: 'Kept an eye on', past_participle: 'Kept an eye on', irregular: true, lesson: 6 },
-				{ id: 148, spanish: 'Prestar', base_form: 'Lend', simple_past: 'Lent', past_participle: 'Lent', irregular: true, lesson: 6 },
-				{ id: 149, spanish: 'Tomar/Recibir prestado', base_form: 'Borrow', simple_past: 'Borrowed', past_participle: 'Borrowed', irregular: false, lesson: 6 },
-				{ id: 150, spanish: 'Arreglárselas', base_form: 'Get by', simple_past: 'Got by', past_participle: 'Gotten by', irregular: true, lesson: 6 },
-				{ id: 151, spanish: 'Quitarse(prenda o zapato)', base_form: 'Take off', simple_past: 'Took off', past_participle: 'Taken off', irregular: true, lesson: 6 },
-				{ id: 152, spanish: 'Asimilar, entender', base_form: 'Take in', simple_past: 'Took in', past_participle: 'Taken in', irregular: true, lesson: 6 },
-				{ id: 153, spanish: 'Reconciliarse(con alguien)', base_form: 'Make up(with someone)', simple_past: 'Made up', past_participle: 'Made up', irregular: true, lesson: 6 },
-				{ id: 154, spanish: 'Contratar', base_form: 'Take on', simple_past: 'Took on', past_participle: 'Taken on', irregular: true, lesson: 6 },
-				{ id: 155, spanish: 'Hablar con(alguien)', base_form: 'Talk to(somebody)', simple_past: 'Talked to ', past_participle: 'Talked to', irregular: false, lesson: 6 },
-				{ id: 156, spanish: 'Invitar a salir(a alguien)', base_form: 'Ask(someone) out', simple_past: 'Asked out', past_participle: 'Asked out', irregular: false, lesson: 6 },
-				{ id: 157, spanish: 'Descomponerse', base_form: 'Break down', simple_past: 'Broke down', past_participle: 'Broken down', irregular: true, lesson: 6 },
-				{ id: 158, spanish: 'Fundirse(foco), Consumirse(vela u otro combustible)', base_form: 'Burn out', simple_past: 'Burned out', past_participle: 'Burned out', irregular: false, lesson: 6 },
-				{ id: 159, spanish: 'Pasar por/Atravesar (situaciones difíciles)', base_form: 'Go through', simple_past: 'Went through', past_participle: 'Gone through', irregular: true, lesson: 6 },
-				{ id: 160, spanish: 'Dejar(algo o alguien en algún lugar)', base_form: 'Drop off', simple_past: 'Dropped off', past_participle: 'Dropped off', irregular: false, lesson: 6 },
-				{ id: 161, spanish: 'Salir adelante/progresar', base_form: 'Get ahead', simple_past: 'Got ahead', past_participle: 'Gotten ahead', irregular: true, lesson: 6 },
-				{ id: 162, spanish: 'Entrar', base_form: 'Get into', simple_past: 'Got into', past_participle: 'Gotten into', irregular: true, lesson: 6 },
-				{ id: 163, spanish: 'Calmarse/Establecerse', base_form: 'Settle down', simple_past: 'Settled down', past_participle: 'Settled down', irregular: false, lesson: 6 },
-				{ id: 164, spanish: 'Reunirse', base_form: 'Get together', simple_past: 'Got together', past_participle: 'Gotten together', irregular: true, lesson: 6 },
-				{ id: 165, spanish: 'Sonar(alarma)/Activarse', base_form: 'Go off', simple_past: 'Went off', past_participle: 'Gone off', irregular: true, lesson: 6 },
-				{ id: 166, spanish: 'Acercarse(a alguien)', base_form: 'Come up to', simple_past: 'Came up to', past_participle: 'Come up to', irregular: true, lesson: 6 },
-				{ id: 167, spanish: 'Seguir adelante', base_form: 'Move on', simple_past: 'Moved on', past_participle: 'Moved on', irregular: false, lesson: 6 },
-				{ id: 168, spanish: 'Quedarse sin(cuando se agota algo)', base_form: 'Run out of', simple_past: 'Ran out of', past_participle: 'Run out of', irregular: true, lesson: 6 },
-				{ id: 169, spanish: 'Llevarse [bien](con)', base_form: 'Get along', simple_past: 'Got along', past_participle: 'Gotten along', irregular: true, lesson: 6 },
+		//lesson 5
+		{ id: 130, spanish: 'Pedir consejo', base_form: 'Ask for advice', simple_past: 'Asked for advice', past_participle: 'Asked for advice', irregular: false, lesson: 5 },
+		{ id: 131, spanish: 'Terminarse', base_form: 'Be over', simple_past: 'Was/were over', past_participle: 'Been over', irregular: false, lesson: 5 },
+		{ id: 132, spanish: 'Venir (visitar a alguien de manera casual)', base_form: 'Come over', simple_past: 'Came over', past_participle: 'Come over', irregular: true, lesson: 5 },
+		{ id: 133, spanish: 'Contar con', base_form: 'Count on', simple_past: 'Counted on', past_participle: 'Counted on', irregular: false, lesson: 5 },
+		{ id: 134, spanish: 'Estar harto', base_form: 'Be fed up', simple_past: 'Was/Were fed up', past_participle: 'Been fed up', irregular: false, lesson: 5 },
+		{ id: 135, spanish: 'Tener ganas de', base_form: 'Feel like', simple_past: 'Felt like', past_participle: 'Felt like', irregular: true, lesson: 5 },
+		{ id: 136, spanish: 'Salir (de algún lugar)', base_form: 'Get out', simple_past: 'Got out', past_participle: 'Gotten out', irregular: true, lesson: 5 },
+		{ id: 137, spanish: 'Salir (usualmente para divertirse)', base_form: 'Go out', simple_past: 'Went out', past_participle: 'Gone out', irregular: true, lesson: 5 },
+		{ id: 138, spanish: 'Mirar', base_form: 'Look at', simple_past: 'Looked at', past_participle: 'Looked at', irregular: false, lesson: 5 },
+		{ id: 139, spanish: 'Decidirse por algo', base_form: 'Make up my mind', simple_past: 'Made up my mind', past_participle: 'Made up my mind', irregular: false, lesson: 5 },
+		{ id: 140, spanish: 'Sufrir de (problemas de salud)', base_form: 'Suffer from', simple_past: 'Suffered from', past_participle: 'Suffered from', irregular: false, lesson: 5 },
+		{ id: 141, spanish: 'Cuidar', base_form: 'Take care of', simple_past: 'Took care of', past_participle: 'Taken care of', irregular: true, lesson: 5 },
+		{ id: 142, spanish: 'Deshacerse de/Tirar a la basura', base_form: 'Throw away', simple_past: 'Threw away', past_participle: 'Thrown away', irregular: true, lesson: 5 },
+		{ id: 143, spanish: 'Terminar (una relación)', base_form: 'Break up', simple_past: 'Broke up', past_participle: 'Broken up', irregular: true, lesson: 5 },
+		//lesson 6
+		{ id: 144, spanish: 'Cuidar(por un periodo de tiempo corto)', base_form: 'Babysit', simple_past: 'Babysat', past_participle: 'Babysat', irregular: true, lesson: 6 },
+		{ id: 145, spanish: 'Ayudar con la tarea', base_form: 'Help with homework', simple_past: 'Helped with homework', past_participle: 'Helped with homework', irregular: false, lesson: 6 },
+		{ id: 146, spanish: 'Dar un aventón(a alguien)', base_form: 'Give(someone) a ride', simple_past: 'Gave a ride', past_participle: 'Given a ride', irregular: true, lesson: 6 },
+		{ id: 147, spanish: 'Estar al pendiente de(algo)', base_form: 'Keep an eye on(something)', simple_past: 'Kept an eye on', past_participle: 'Kept an eye on', irregular: true, lesson: 6 },
+		{ id: 148, spanish: 'Prestar', base_form: 'Lend', simple_past: 'Lent', past_participle: 'Lent', irregular: true, lesson: 6 },
+		{ id: 149, spanish: 'Tomar/Recibir prestado', base_form: 'Borrow', simple_past: 'Borrowed', past_participle: 'Borrowed', irregular: false, lesson: 6 },
+		{ id: 150, spanish: 'Arreglárselas', base_form: 'Get by', simple_past: 'Got by', past_participle: 'Gotten by', irregular: true, lesson: 6 },
+		{ id: 151, spanish: 'Quitarse(prenda o zapato)', base_form: 'Take off', simple_past: 'Took off', past_participle: 'Taken off', irregular: true, lesson: 6 },
+		{ id: 152, spanish: 'Asimilar, entender', base_form: 'Take in', simple_past: 'Took in', past_participle: 'Taken in', irregular: true, lesson: 6 },
+		{ id: 153, spanish: 'Reconciliarse(con alguien)', base_form: 'Make up(with someone)', simple_past: 'Made up', past_participle: 'Made up', irregular: true, lesson: 6 },
+		{ id: 154, spanish: 'Contratar', base_form: 'Take on', simple_past: 'Took on', past_participle: 'Taken on', irregular: true, lesson: 6 },
+		{ id: 155, spanish: 'Hablar con(alguien)', base_form: 'Talk to(somebody)', simple_past: 'Talked to ', past_participle: 'Talked to', irregular: false, lesson: 6 },
+		{ id: 156, spanish: 'Invitar a salir(a alguien)', base_form: 'Ask(someone) out', simple_past: 'Asked out', past_participle: 'Asked out', irregular: false, lesson: 6 },
+		{ id: 157, spanish: 'Descomponerse', base_form: 'Break down', simple_past: 'Broke down', past_participle: 'Broken down', irregular: true, lesson: 6 },
+		{ id: 158, spanish: 'Fundirse(foco), Consumirse(vela u otro combustible)', base_form: 'Burn out', simple_past: 'Burned out', past_participle: 'Burned out', irregular: false, lesson: 6 },
+		{ id: 159, spanish: 'Pasar por/Atravesar (situaciones difíciles)', base_form: 'Go through', simple_past: 'Went through', past_participle: 'Gone through', irregular: true, lesson: 6 },
+		{ id: 160, spanish: 'Dejar(algo o alguien en algún lugar)', base_form: 'Drop off', simple_past: 'Dropped off', past_participle: 'Dropped off', irregular: false, lesson: 6 },
+		{ id: 161, spanish: 'Salir adelante/progresar', base_form: 'Get ahead', simple_past: 'Got ahead', past_participle: 'Gotten ahead', irregular: true, lesson: 6 },
+		{ id: 162, spanish: 'Entrar', base_form: 'Get into', simple_past: 'Got into', past_participle: 'Gotten into', irregular: true, lesson: 6 },
+		{ id: 163, spanish: 'Calmarse/Establecerse', base_form: 'Settle down', simple_past: 'Settled down', past_participle: 'Settled down', irregular: false, lesson: 6 },
+		{ id: 164, spanish: 'Reunirse', base_form: 'Get together', simple_past: 'Got together', past_participle: 'Gotten together', irregular: true, lesson: 6 },
+		{ id: 165, spanish: 'Sonar(alarma)/Activarse', base_form: 'Go off', simple_past: 'Went off', past_participle: 'Gone off', irregular: true, lesson: 6 },
+		{ id: 166, spanish: 'Acercarse(a alguien)', base_form: 'Come up to', simple_past: 'Came up to', past_participle: 'Come up to', irregular: true, lesson: 6 },
+		{ id: 167, spanish: 'Seguir adelante', base_form: 'Move on', simple_past: 'Moved on', past_participle: 'Moved on', irregular: false, lesson: 6 },
+		{ id: 168, spanish: 'Quedarse sin(cuando se agota algo)', base_form: 'Run out of', simple_past: 'Ran out of', past_participle: 'Run out of', irregular: true, lesson: 6 },
+		{ id: 169, spanish: 'Llevarse [bien](con)', base_form: 'Get along', simple_past: 'Got along', past_participle: 'Gotten along', irregular: true, lesson: 6 },
+                //lesson 7                       
+                { id: 169, spanish: 'Aparecer', base_form: 'Crop up', simple_past: 'Cropped up', past_participle: 'Cropped up', irregular: false, lesson: 7 },
+                { id: 169, spanish: 'Dejar(de asistir a) la escuela', base_form: 'Drop out of school', simple_past: 'Dropped out of school', past_participle: 'Dropped out of school', irregular: false, lesson: 7 },
+                { id: 170, spanish: 'Lidiar con/Manejar(algo)', base_form: 'Deal with', simple_past: 'Dealt with', past_participle: 'Dealt with', irregular: false, lesson: 7 },
+                { id: 171, spanish: 'Solicitar (visa/pasaporte)', base_form: 'Apply for', simple_past: 'Applied for', past_participle: 'Applied for', irregular: false, lesson: 7 },
+                { id: 172, spanish: 'Dejar pasar (una oportunidad)', base_form: 'Pass up', simple_past: 'Passed up', past_participle: 'Passed up', irregular: false, lesson: 7 },
+                { id: 173, spanish: 'Desifrar, resolver', base_form: 'Figure out', simple_past: 'Figured out', past_participle: 'Figured out', irregular: false, lesson: 7 },
+                { id: 174, spanish: 'Salir furioso de (un lugar)', base_form: 'Storm out of', simple_past: 'Stormed out of', past_participle: 'Stormed out of', irregular: false, lesson: 7 },
+                { id: 175, spanish: 'Desvelarse', base_form: 'Stay up late', simple_past: 'Stayed up late', past_participle: 'Stayed up late', irregular: false, lesson: 7 }
 ];
 
 var select_list = document.getElementById('verb_list');
@@ -266,6 +275,7 @@ function search() {
     var past_participle_verb = document.getElementById("past_participle").value;
     var verb = verbs.find(x => x.base_form == select_list.value);
     clear();
+    document.getElementById('spanish').innerText = verb.spanish;
 
     if (simple_past_verb != "") {
         if (verb.simple_past.toLowerCase().trim() == simple_past_verb.toLowerCase().trim())
@@ -367,10 +377,6 @@ function fillTable(verbs_list) {
     document.getElementById('search_verb').value = '';
 }
 
-function fillImagesVerbs() {
-    
-}
-
 function searchSpecificVerb() {
     if (search_verb.value != '') {
         tbody = document.getElementById('match-data');
@@ -388,8 +394,4 @@ function searchSpecificVerb() {
     }
     else
         alert('The verb text is empty')
-}
-
-function fillImages() {
-    
 }

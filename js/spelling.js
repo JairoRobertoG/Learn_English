@@ -1,27 +1,59 @@
-function spellingWord() {
-    var palabra = document.getElementById("word_to_spell");
-    if(palabra.value.length ==0){
-        alert("Nada que deletrear");
-        return;
-    }
-    word_to_spell = document.getElementById('word_to_spell').value.trim().split("");
+$(document).ready(function(e) {
+    hideSpinner();
+    setFocusWordToSpell();
+    
+    $('#word_to_spell').on('keypress', function (e) {
+         if(e.which === 13){
+            spellingWord();
+         }
+    });
+});
 
-    function spellConTime(i) {
-        if (i >= palabra.value.length) {
-            return;
-        }
-        var dummy = setTimeout(function () {
-            playSound('audios/alphabet/' + word_to_spell[i].toUpperCase() + word_to_spell[i].toLowerCase() + '.mp3');
-            i++;
-            spellConTime(i);
-        }, 1500);
+function spellingWord() {
+    showSpinner();
+    var word = $('#word_to_spell').val();
+
+    if (validateWord(word.trim())) {
+        document.getElementById("audio").src = "audio.php?word="+word;
+        var sound = document.getElementById("audio"); 
+
+        document.querySelector("#audio").addEventListener("ended", hideSpinner, false);
+
+        sound.play();    
     }
-    spellConTime(0);
 }
 
-function playSound(src) {
-    document.getElementById("audio").src = src;
-        var sound = document.getElementById("audio");    
+function validateWord(word) {
+    if(word.length == 0) {
+        alert("You must write a word");
+        setFocusWordToSpell();
+        hideSpinner();
 
-        sound.play();
+        return false;
+    }
+
+    var regex = /^[a-zA-Z]*$/;
+
+    if(!word.search(regex))
+        return true;
+    else {
+        alert('you must write word only with letters from A to Z and without space');
+        setFocusWordToSpell();    
+        hideSpinner();
+        return false;
+    }
+        
+}
+
+function showSpinner() {
+    $('#fidget-spinner').show();
+}
+
+function hideSpinner() {
+    $('#fidget-spinner').hide();
+}
+
+function setFocusWordToSpell() {
+    $('#word_to_spell').val('');
+    $('#word_to_spell').focus();
 }
