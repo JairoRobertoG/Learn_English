@@ -8,7 +8,7 @@ $db = new DB();
 $site = new Site($db, "Formulario Verbos");
 $user = new User($db);
 $accion = $_GET['accion'];
-$site->header("Formulario de Verbos");
+$site->header("Add and Edit Verbs");
 if($accion == "login") {
 	$user->Login($_POST);
 } else {
